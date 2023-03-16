@@ -34,22 +34,29 @@
     <hr>
 
     <section>
-
-        <!-- TODO: php script to add articles to index using loop -->
-        <!-- 1. infinite loop: if .html file is added... -->
-        <!-- 2. add .html file into public folder -->
-        <!-- 3. add .html link: ul li a element -->
-
         <h3>📔 Articles</h3>
         <ul>
             <?php
-            // add .html file links to index page
-            $htmlfiles = glob("*.html");
-            foreach ($htmlfiles as $htmlfile) {
-                echo "<li>03/16/23: <a href=$htmlfile>" . basename($htmlfile) . "</a></li>\n";
+            
+            $directories = glob('*', GLOB_ONLYDIR);
+            // search directory for article subdirectories
+            foreach ($directories as $dir) {
+                $htmlfiles = glob($dir . "/index.html");
+                // search for index.html file
+                foreach ($htmlfiles as $htmlfile) {
+                    // parse html as string
+                    $str = file_get_contents($htmlfile);
+                    // return tags string value
+                    $start = strpos($str, '<time>');
+                    $end = strpos($str, '</time>', $start);
+                    $date = substr($str, $start, $end-$start+7);
+                    // remove dashes from title name
+                    $title = str_replace('-', ' ', $dir);
+                    // add title as link tag to index page
+                    echo "<li>" . $date . ": <a href=\"$dir\">" . basename($title) . "</a></li>\n";
+                }
             }
             ?>
-
         </ul>
     </section>
     <br>
