@@ -3,6 +3,9 @@
 
 <head>
     <?php include '../includes/head.php'; ?>
+    
+    <title>Lee Howard's Website</title>
+
 </head>
 
 <body>
@@ -41,11 +44,11 @@
             $directories = glob('*', GLOB_ONLYDIR);
             // search directory for article subdirectories
             foreach ($directories as $dir) {
-                $htmlfiles = glob($dir . "/index.html");
+                $phpfiles = glob($dir . "/index.php");
                 // search for index.html file
-                foreach ($htmlfiles as $htmlfile) {
+                foreach ($phpfiles as $phpfile) {
                     // parse html as string
-                    $str = file_get_contents($htmlfile);
+                    $str = file_get_contents($phpfile);
                     // return tags string value
                     $start = strpos($str, '<time>');
                     $end = strpos($str, '</time>', $start);
