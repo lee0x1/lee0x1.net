@@ -1,0 +1,6 @@
+body {
+    max-width: 35rem;
+    margin: 0 auto;
+    padding: 0 16px;
+    font-family: monospace; /* TODO: use custom font face? */
+}

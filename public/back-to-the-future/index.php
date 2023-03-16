@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <?php include '../../includes/head.php'; ?>
+    <?php $ROOT = '../'; include '../../includes/head.php'; ?>
     <meta name="description" content="changing to php for my personal website.">
     <title>Back to The Future Web Development</title>
 </head>
