@@ -3,7 +3,10 @@
 
 <head>
     <?php include '../includes/head.php'; ?>
-    
+    <meta 
+        name="description"
+        content="Lee Howard's personal network of development and other cool things."
+    >
     <title>Lee Howard's Website</title>
 
 </head>
