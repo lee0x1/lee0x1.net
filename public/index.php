@@ -2,11 +2,12 @@
 <html lang="en">
 
 <head>
-    <?php $ROOT = './'; include '../includes/head.php'; ?>
-    <meta 
-        name="description"
-        content="Lee Howard's personal network of development and other cool things."
-    >
+    <?php
+        $ROOT = './';
+        $DESC = "Lee Howard's personal network of development and other cool things.";
+        include '../includes/head.php';
+    ?>
+
     <title>Lee Howard's Website</title>
 
 </head>

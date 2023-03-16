@@ -2,8 +2,12 @@
 <html lang="en">
 
 <head>
-    <?php $ROOT = '../'; include '../../includes/head.php'; ?>
-    <meta name="description" content="changing to php for my personal website.">
+    <?php
+        $ROOT = '../';
+        $DESC = "changing to php for my personal website.";
+        include '../../includes/head.php';
+    ?>
+
     <title>Back to The Future Web Development</title>
 </head>
 
