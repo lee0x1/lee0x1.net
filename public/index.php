@@ -5,11 +5,9 @@
     <?php
         $ROOT = './';
         $DESC = "Lee Howard's personal network of development and other cool things.";
+        $TITLE = "Lee Howard's Website";
         include '../includes/head.php';
     ?>
-
-    <title>Lee Howard's Website</title>
-
 </head>
 
 <body>

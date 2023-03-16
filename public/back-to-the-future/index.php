@@ -5,10 +5,9 @@
     <?php
         $ROOT = '../';
         $DESC = "changing to php for my personal website.";
+        $TITLE = "Back to The Future Web Development";
         include '../../includes/head.php';
     ?>
-
-    <title>Back to The Future Web Development</title>
 </head>
 
 <body>
