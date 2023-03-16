@@ -39,7 +39,7 @@
     <hr>
 
     <section>
-        <h3>📔 Articles</h3>
+        <h2>📔 Articles</h2>
         <ul>
             <?php include '../includes/articles.php'?>
         </ul>
