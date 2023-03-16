@@ -15,7 +15,7 @@
     <?php include '../includes/header.php'; ?>
 
     <section>
-        <h3>🧪 Projects</h3>
+        <h2>🧪 Projects</h2>
         <ul>
             <li>
                 <a href="https://github.com/lee0x1/fc" target="_blank">fc - github user first commit finder</a>
@@ -24,7 +24,7 @@
     <br>
 
     <section>
-        <h3>📶 Contact / links</h3>
+        <h2>📶 Contact / links</h2>
         <ul>
             <li>email: <a href="mailto:info@lee0x1.net">info@lee0x1.net</a></li>
             <li>twitter: <a href="https://twitter.com/lee0x1/" target="_blank">@lee0x1</a></li>
