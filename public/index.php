@@ -42,10 +42,14 @@
 
         <h3>📔 Articles</h3>
         <ul>
-            <li>03/16/23: <a href="back-to-the-future-wd.php">
-                    <strong>Back to the future of web development</strong>
-                </a>
-            </li>
+            <?php
+            // add .html file links to index page
+            $htmlfiles = glob("*.html");
+            foreach ($htmlfiles as $htmlfile) {
+                echo "<li>03/16/23: <a href=$htmlfile>" . basename($htmlfile) . "</a></li>\n";
+            }
+            ?>
+
         </ul>
     </section>
     <br>
