@@ -1,8 +1,14 @@
 <?php
 
+// all subdirectories in public folder (i.e: articles)
 $directories = glob('*', GLOB_ONLYDIR);
+
+// sort directories by dir creation date
+usort($directories, fn ($a, $b) => - (filemtime($a) - filemtime($b)));
+
 // search directory for article subdirectories
 foreach ($directories as $dir) {
+
     $phpfiles = glob($dir . "/index.php");
     // search for index.html file
     foreach ($phpfiles as $phpfile) {
@@ -18,4 +24,5 @@ foreach ($directories as $dir) {
     echo "<li>" . $date . ": <a href=\"$dir\">" . basename($title) . "</a></li>\n";
     }
 }
+
 ?>
