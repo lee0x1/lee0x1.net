@@ -14,3 +14,8 @@ body {
     padding: 0 16px;
     font-family: lee0x1font;
 }
+
+#site-title {
+    text-decoration: none;
+    color: black;
+}
