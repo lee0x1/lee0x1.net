@@ -29,9 +29,7 @@
             <li>twitter: <a href="https://twitter.com/lee0x1/" target="_blank">@lee0x1</a></li>
             <li>github: <a href="https://github.com/lee0x1" target="_blank">@lee0x1</a></li>
         </ul>
-        <p>I'm usually very quick to respond via <a href="mailto:info@lee0x1.net">email</a>, but if<br>
-            you prefer to use social media hit me up on
-            <a href="https://twitter.com/lee0x1/" target="_blank">twitter</a>.
+        <p>I'm usually very quick to respond via <a href="mailto:info@lee0x1.net">email</a>, but if you prefer to use social media, hit me up on <a href="https://twitter.com/lee0x1/" target="_blank">twitter</a>.
         </p>
         <p><em>Thank you for visiting.</em></p>
     </section>
