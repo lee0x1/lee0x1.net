@@ -4,10 +4,39 @@ html {
 
 body {
     font-size: 1rem;
-    max-width: 35rem;
+    max-width: 680px;
     margin: 0 auto;
     padding: 0 16px;
     font-family: Helvetica,Arial,sans-serif;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+footer {
+    text-align: center;
+}
+
+pre {
+    background: #f5f5f5;
+    border: 1px solid;
+    display: block;
+    font-family: monospace;
+    font-size: .7rem;
+    line-height: 1.4;
+    margin: 16px 0;
+    overflow-x: auto;
+    padding: .8rem;
+    white-space: pre;
+}
+
+p>code {
+    background-color: #eeeeee;
+    font-family: monospace;
+    font-size: 14px;
 }
 
 #site-title {
