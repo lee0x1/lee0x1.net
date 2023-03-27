@@ -38,8 +38,8 @@
 
     <section>
         <h2>📔 Articles</h2>
-        <ul>
-            <?php include '../includes/articles.php'?>
+        <ul class="article-list">
+            <?php include '../includes/articles.php';?>
         </ul>
     </section>
     <br>

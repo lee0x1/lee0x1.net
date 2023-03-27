@@ -11,7 +11,7 @@ body {
     max-width: 680px;
     margin: 0 auto;
     padding: 0 16px;
-    font-family: Helvetica,Arial,sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 img {
@@ -29,15 +29,15 @@ pre {
     border: 1px solid;
     display: block;
     font-family: monospace;
-    font-size: .7rem;
+    font-size: 0.7rem;
     line-height: 1.4;
     margin: 16px 0;
     overflow-x: auto;
-    padding: .8rem;
+    padding: 0.8rem;
     white-space: pre;
 }
 
-p>code {
+p > code {
     background-color: #eeeeee;
     font-family: monospace;
     font-size: 14px;
@@ -54,11 +54,11 @@ blockquote p {
 }
 
 blockquote p::before {
-    content: '\201C';
+    content: "\201C";
 }
 
 blockquote p::after {
-    content: '\201D';
+    content: "\201D";
 }
 
 figcaption p {
@@ -72,4 +72,20 @@ figcaption h4 {
 #site-title {
     text-decoration: none;
     color: black;
+}
+
+.article-list {
+    list-style-type: none;
+}
+
+.article-list li {
+    padding: 4px 0;
+    line-height: 1;
+}
+
+@media only screen and (max-width: 500px) {
+    .article-list {
+        padding: 0;
+        font-size: 12px;
+    }
 }
