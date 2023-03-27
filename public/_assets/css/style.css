@@ -88,4 +88,8 @@ figcaption h4 {
         padding: 0;
         font-size: 12px;
     }
+    
+    figure {
+        margin:0;
+    }
 }
