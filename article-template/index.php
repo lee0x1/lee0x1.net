@@ -14,7 +14,8 @@
     <?php include '../../includes/header.php'; ?>
 
     <h2><?php echo $TITLE ?></h2>
-    <time>MM/DD/YYYY</time>
+    <!-- yyyy-mm-dd -->
+    <time>YYYY-MM-DD</time>
     
     <!-- write new article content -->
     
