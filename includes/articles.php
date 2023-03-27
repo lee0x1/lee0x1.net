@@ -18,7 +18,7 @@ foreach ($directories as $dir) {
         // convert to yyyy-mm-dd: sorting is easier
         $date = date("Y-m-d", strtotime($date_matches[1]));
         // add each article to articles array as associative arrays
-        $articles[] = array("title" => $title_matches[1], "date" => $date);
+        $articles[] = array("title" => $title_matches[1], "date" => $date, "filename" =>$dir);
     }
 }
 
@@ -33,7 +33,8 @@ foreach ($articles as $article) {
     echo "<li>" .
     $article['date'] .
     ": <a href=" .
-    $dir . "><strong>" .
+    $article['filename'] .
+    "><strong>" .
     basename($article['title']) .
     "</strong></a></li>\n";
 }
