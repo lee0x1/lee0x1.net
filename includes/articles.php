@@ -7,15 +7,14 @@ $directories = glob('*', GLOB_ONLYDIR);
 foreach ($directories as $dir) {
 
     $phpfiles = glob($dir . "/index.php");
-    // search for index.html file
+    // search for index.php file
     foreach ($phpfiles as $phpfile) {
-        // parse html as string
+        // parse .php file as string
         $str = file_get_contents($phpfile);
-        // return tags string value
-        $start = strpos($str, '<time>');
-        $end = strpos($str, '</time>', $start);
-        $date = substr($str, $start, $end-$start+7);
-
+        // match <time> tag and extract text value
+        preg_match('/<time[^>]*>(.*)<\/time>/', $str, $matches);
+        // convert to yyyy-mm-dd: sorting is easier
+        $date = date("Y-m-d", strtotime($matches[1]));
         // add each article to articles array as associative arrays
         $articles[] = array("title" => $dir, "date" => $date);
     }
@@ -23,7 +22,7 @@ foreach ($directories as $dir) {
 
 // sort array of arrays based on 'date' key=>val = title=>date
 usort($articles, function ($a, $b) {
-    return $b['date'] <=> $a['date'];
+    return strtotime($b['date']) <=> strtotime($a['date']);
 });
 
 // iterate though articles 
