@@ -12,11 +12,13 @@ foreach ($directories as $dir) {
         // parse .php file as string
         $str = file_get_contents($phpfile);
         // match <time> tag and extract text value
-        preg_match('/<time[^>]*>(.*)<\/time>/', $str, $matches);
+        preg_match('/<time[^>]*>(.*)<\/time>/', $str, $date_matches);
+        // match <h2> tag: article title index 1 element of array
+        preg_match('/<h2[^>]*>(.*)<\/h2>/', $str, $title_matches);
         // convert to yyyy-mm-dd: sorting is easier
-        $date = date("Y-m-d", strtotime($matches[1]));
+        $date = date("Y-m-d", strtotime($date_matches[1]));
         // add each article to articles array as associative arrays
-        $articles[] = array("title" => $dir, "date" => $date);
+        $articles[] = array("title" => $title_matches[1], "date" => $date);
     }
 }
 
@@ -27,17 +29,12 @@ usort($articles, function ($a, $b) {
 
 // iterate though articles 
 foreach ($articles as $article) {
-    
-    // removes dashes from article title
-    $title = str_replace('-', ' ', $article['title']);
-    
-    // add each article as list item
+    // add each to li elements
     echo "<li>" .
     $article['date'] .
     ": <a href=" .
-    $article['title'] .
-    "><strong>" .
-    basename($title) .
+    $dir . "><strong>" .
+    basename($article['title']) .
     "</strong></a></li>\n";
 }
 
