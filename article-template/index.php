@@ -4,6 +4,7 @@
 <head>
     <?php
         $ROOT = '../';
+        $KEYWORDS = ""; // article keywords
         $DESC = "";     // article description    
         $TITLE = "";    // article title
         include '../../includes/head.php';
@@ -13,9 +14,9 @@
 <body>
     <?php include '../../includes/header.php'; ?>
 
-    <h2><?php echo $TITLE ?></h2>
-    <!-- yyyy-mm-dd -->
-    <time>YYYY-MM-DD</time>
+    <h2>Article Title</h2>
+    <!-- Month DD, YYYY -->
+    <time>Month DD, YYYY</time>
     
     <!-- write new article content -->
     
