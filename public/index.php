@@ -3,11 +3,11 @@
 
 <head>
     <?php
-        $ROOT = './';
-        $KEYWORDS = "Software Engineering, Development";
-        $DESC = "Lee Howard's personal network of development and other cool things.";
-        $TITLE = "Lee Howard's Website";
-        include '../includes/head.php';
+    $ROOT = './';
+    $KEYWORDS = "Software Engineering, Development";
+    $DESC = "Lee Howard's personal network of development and other cool things.";
+    $TITLE = "Lee Howard's Website";
+    include '../includes/head.php';
     ?>
 </head>
 
@@ -18,7 +18,7 @@
         <h2>🧪 Projects</h2>
         <ul>
             <li>
-                <a href="https://github.com/lee0x1/fc" target="_blank">fc - github user first commit finder</a>
+                <a href="https://lee0x1.github.io/fc" target="_blank">fc</a> (<a href="http://github.com/lee0x1/fc" target="_blank">repo</a>) - github user first commit finder
         </ul>
     </section>
     <br>
@@ -40,7 +40,7 @@
     <section>
         <h2>📔 Articles</h2>
         <ul class="article-list">
-            <?php include '../includes/articles.php';?>
+            <?php include '../includes/articles.php'; ?>
         </ul>
     </section>
     <br>
