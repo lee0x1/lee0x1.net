@@ -4,6 +4,7 @@
 <head>
     <?php
         $ROOT = './';
+        $KEYWORDS = "Software Engineering, Development";
         $DESC = "Lee Howard's personal network of development and other cool things.";
         $TITLE = "Lee Howard's Website";
         include '../includes/head.php';
