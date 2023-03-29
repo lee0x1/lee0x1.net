@@ -3,7 +3,7 @@
 
 <head>
     <?php
-        $ROOT = '../';
+        $ROOT = '../';  // DO NOT CHANGE $ROOT
         $KEYWORDS = ""; // article keywords
         $DESC = "";     // article description    
         $TITLE = "";    // article title
@@ -13,6 +13,7 @@
 
 <body>
     <?php include '../../includes/header.php'; ?>
+    <?php include '../../includes/footnotes.php'; ?>
 
     <h2>Article Title</h2>
     <!-- Month DD, YYYY -->

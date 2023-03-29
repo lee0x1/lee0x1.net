@@ -69,6 +69,11 @@ figcaption h4 {
     text-align: center;
 }
 
+sup {
+    vertical-align: super;
+    font-size: 0.65em;
+}
+
 #site-title {
     text-decoration: none;
     color: black;
